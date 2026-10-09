@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-sidebar: #2B1B2E;
+  --color-sidebar-fg: #E5D3E0;
+  --color-sidebar-muted: #8A7585;
+  --color-sidebar-hover: #3E2743;
+  --color-sidebar-active: #F97316;
+  --color-brand: #F97316;
+  --color-brand-ink: #ffffff;
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-primary-fg: #ffffff;
+  --color-canvas: #FFF7F1;
+  --color-surface: #FFFFFF;
+  --color-fg: #2B1B2E;
+  --color-muted: #8A7585;
+  --color-subtle: #d3c4cf;
+  --color-border: #F3E3D8;
+  --color-ring: #F97316;
+  
+  --color-ok: #059669;
+  --color-ok-bg: #ecfdf5;
+  --color-ok-fg: #047857;
+  --color-info: #0284c7;
+  --color-info-bg: #e0f2fe;
+  --color-info-fg: #0369a1;
+  --color-warn: #d97706;
+  --color-warn-bg: #fffbeb;
+  --color-warn-fg: #b45309;
+  --color-danger: #EF476F;
+  --color-danger-bg: #ffeeea;
+  --color-danger-fg: #b91c1c;
+  
+  --color-track: #FDE6D3;
+  --color-bar: #F97316;
+
+  --color-role-bg: #FFEDD9;
+  --color-role-fg: #B45309;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+
+  --shadow-card: 0 1px 3px rgba(43, 27, 46, 0.05);
+  --shadow-card-hover: 0 4px 12px rgba(43, 27, 46, 0.08);
+  --shadow-pop: 0 16px 40px rgba(43, 27, 46, 0.12);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  th {
+    background-color: #FFF1E6;
+  }
+  tbody tr {
+    transition: background-color 0.2s;
+  }
+  tbody tr:hover {
+    background-color: var(--color-canvas);
+  }
+}
+
+@utility panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-lg);
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

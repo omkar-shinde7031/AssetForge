@@ -1,0 +1,1 @@
+run command  npx vite to run the project 
