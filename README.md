@@ -5,7 +5,8 @@ AssetForge is a web app for keeping track of IT hardware: who has which laptop, 
 
 I built it because inventory in most small teams ends up in a spreadsheet that nobody trusts. Someone takes a monitor, forgets to write it down, and three weeks later nobody knows where it went. AssetForge tries to make the boring part (logging who took what) quick enough that people actually do it
 <hr>
-<img width="1895" height="1032" alt="image" src="https://github.com/user-attachments/assets/a42b215a-af50-4484-9ec5-02d101e7427f" />
+<img width="1901" height="1030" alt="image" src="https://github.com/user-attachments/assets/e1ad9cc4-f2e9-4098-8d2f-af14a9a41f01" />
+
 
 <h2>What you can do with it</h2>
 
@@ -19,10 +20,11 @@ I built it because inventory in most small teams ends up in a spreadsheet that n
 
 <h3>5. Manage assets and people.</h3> Every asset gets a tag like LAP-0003, a serial number, vendor, location, cost and status. You can search and filter by category or status. The Employees page shows each person and how many assets they currently hold
 <h1>Screenshots</h1>
-<img width="1896" height="1026" alt="image" src="https://github.com/user-attachments/assets/ebcd0256-075f-417d-a030-259bd69b47b9" />
-<img width="1897" height="1031" alt="image" src="https://github.com/user-attachments/assets/2cf10735-9379-45f0-99b2-2c0fc0f07c85" />
-<img width="1891" height="1027" alt="image" src="https://github.com/user-attachments/assets/bbebae86-f315-42ba-94b4-8fac16d51da1" />
-<img width="791" height="1041" alt="image" src="https://github.com/user-attachments/assets/6e5e5928-b0c3-41b3-96a9-06cef182fc89" />
+<img width="1897" height="1031" alt="image" src="https://github.com/user-attachments/assets/04f91597-f50d-4f2d-a1c3-25a906951b47" />
+<img width="1897" height="1031" alt="image" src="https://github.com/user-attachments/assets/8ef953fc-ee6a-48e0-a421-84030d3e2095" />
+<img width="1895" height="1032" alt="image" src="https://github.com/user-attachments/assets/f3005801-b613-46fe-a9b9-e680107fccf5" />
+<img width="1901" height="1032" alt="image" src="https://github.com/user-attachments/assets/2d61bed8-8cc3-49f3-9c3e-de571a2326ef" />
+
 
 
 
