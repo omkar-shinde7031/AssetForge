@@ -25,6 +25,8 @@ I built it because inventory in most small teams ends up in a spreadsheet that n
 <img width="1895" height="1032" alt="image" src="https://github.com/user-attachments/assets/f3005801-b613-46fe-a9b9-e680107fccf5" />
 <img width="1901" height="1032" alt="image" src="https://github.com/user-attachments/assets/2d61bed8-8cc3-49f3-9c3e-de571a2326ef" />
 
+run command  npx vite to run the project 
+
 
 
 
