@@ -9,12 +9,25 @@ if (!cached) {
 }
 
 export async function connectMongo() {
+  if (process.env.VERCEL && MONGODB_URI.includes("127.0.0.1")) {
+    throw new Error(
+      "MISSING MONGODB_URI: You are running on Vercel, but no cloud MongoDB URI was provided! " +
+      "Please go to your Vercel Project Settings -> Environment Variables, and add MONGODB_URI with your MongoDB Atlas connection string."
+    );
+  }
+
   if (cached.conn) {
     return cached.conn;
   }
   if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI, { bufferCommands: false }).then((mongoose) => {
+    cached.promise = mongoose.connect(MONGODB_URI, { 
+      bufferCommands: false,
+      serverSelectionTimeoutMS: 5000, // Timeout fast instead of hanging for 30s
+    }).then((mongoose) => {
       return mongoose;
+    }).catch(err => {
+      cached.promise = null;
+      throw new Error(`Failed to connect to MongoDB at ${MONGODB_URI}: ${err.message}`);
     });
   }
   cached.conn = await cached.promise;
